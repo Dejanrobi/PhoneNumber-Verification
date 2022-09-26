@@ -83,7 +83,8 @@ submitForm.addEventListener("submit", (e)=>{
     window.confirmationResult = confirmationResult
 
   }).catch((e)=>{
-    alert(e.message);
+    const eMessage = e.message
+    alert(eMessage)
   })
   
 })
