@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication with phone password</title>
+
+  <!--INPUT ELEMENT DETAILS-->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+  
+</head>
+<body>
+
+  <!--Authenticating via a phone number-->
+  <div class="container">
+    <form id="login">
+      <p>Enter your phone number:</p>
+      <input id="phone" type="tel" name="phone" />
+      <input type="submit" class="btn" value="Verify" />
+    </form>
+
+    <!--Alert Banner-->
+    <div class="alert alert-info" style="display: none;"></div>
+
+    <div class="recapture-widget" id="recapture-container"></div>
+    <div class="recapture-alert"></div>
+  </div>
+
+  <!--Verify-->
+  <div class="verify-div">
+    <div class="code-verify">
+      <form class="verify-form">
+        <input type="text" class="verification-code">
+        <input type="submit" class="btn" value="Submit" />
+      </form>
+    </div>
+  </div>
+  
+  
+  <!--JAVASCRIPT-->
+  <script type="module" src="./index.js"></script>
+</body>
+
+
+<script>
+  
+</script>
+</html>
