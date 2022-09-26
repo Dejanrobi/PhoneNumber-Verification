@@ -81,7 +81,8 @@ submitForm.addEventListener("submit", (e) => {
   //SIGN IN WITH PHONE NUMBER
   signInWithPhoneNumber(auth, phoneNumber, appVerifier).then((confirmationResult) => {
     window.confirmationResult = confirmationResult
-
+    
+    alert("Verification code sent")
   }).catch((e) => {
     const eMessage = e.message
     alert(eMessage)
@@ -103,9 +104,12 @@ verifyForm.addEventListener("submit", (e) => {
     // User signed in successfully.
     const user = result.user;
     // ...
+    alert("User signed in Successfully")
   }).catch((error) => {
     // User couldn't sign in (bad verification code?)
     // ...
+    const eMessage = error.message
+    alert(eMessage)
   });
 })
 
